@@ -1,0 +1,134 @@
+.add-category-form {
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid rgb(31, 136, 197);
+    width: 400px;
+    height: 155px;
+    padding: 15px;
+}
+
+.add-category-form .item {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.add-category-form .item input {
+    border: none;
+    border-bottom: 3px solid rgb(31, 136, 197);
+    font-size: 20px;
+    width: 220px;
+}
+
+.add-category-form .item:last-child input {
+    text-align: center;
+}
+
+.add-category-form .item input:active,
+.add-category-form .item input:focus {
+    border: none;
+    border-bottom: 3px solid rgb(31, 136, 197);
+    outline: none;
+}
+
+.add-category-form .buttons {
+    text-align: center;
+    margin: 10px;
+}
+
+.add-category-form .buttons button {
+    border: 3px solid rgb(31, 136, 197);
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.add-category-form .buttons button:active {
+    box-shadow: gray 3px 3px 5px;
+}
+
+.clear-table {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.categories-table {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.categories-table table td:nth-child(1) {
+    padding-left: 5px;
+    width: 150px;
+    border-right: 2px solid rgb(31, 136, 197);
+    border-bottom: 2px solid rgb(31, 136, 197);
+    border-top: 2px solid rgb(31, 136, 197);
+}
+
+.categories-table table td:nth-child(2) {
+    padding-left: 5px;
+    width: 300px;
+    border-left: 2px solid rgb(31, 136, 197);
+    border-right: 2px solid rgb(31, 136, 197);
+    border-bottom: 2px solid rgb(31, 136, 197);
+    border-top: 2px solid rgb(31, 136, 197);
+}
+
+.categories-table table td:nth-child(3) {
+    border-left: 2px solid rgb(31, 136, 197);
+    border-top: 2px solid rgb(31, 136, 197);
+    border-bottom: 2px solid rgb(31, 136, 197);
+}
+
+.categories-table table td:nth-child(4) {
+    border-top: 2px solid rgb(31, 136, 197);
+    border-bottom: 2px solid rgb(31, 136, 197);
+}
+
+.categories-table thead {
+    text-align: left;
+    font-weight: bold;
+    font-size: 19px;
+    background-color: rgb(31, 136, 197);
+    color: white;
+}
+
+.categories-table table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.categories-table td {
+    padding: 4px;
+}
+
+.categories-table table tr:first-child td {
+    border-top: none;
+}
+
+.categories-table table {
+    padding: 3px;
+    border-spacing: 0px;
+}
+
+.categories-table table tr td:nth-child(1) input {
+    border: 2px solid rgb(31, 136, 197);
+    width: 140px;
+    outline: none;
+}
+
+.categories-table table tr td:nth-child(2) input {
+    border: 2px solid rgb(31, 136, 197);
+    width: 290px;
+    outline: none;
+}

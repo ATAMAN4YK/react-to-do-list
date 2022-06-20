@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import TasksPage from './components/pages/Tasks';
+import CategoriesPage from './components/pages/Categories';
+import Layout from './components/pages/pages components/Layout';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<TasksPage />} />
+          <Route path="/Tasks" element={<TasksPage />} />
+          <Route path="/Categories" element={<CategoriesPage />} />
+        </Routes>
+      </Layout>
+    </>
   );
 }
 
